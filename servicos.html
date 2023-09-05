@@ -9,83 +9,142 @@
 alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-
 aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
 crossorigin="anonymous">
-        <style> /*style body 1 */
-            *{
-    
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-
-ul{
-    margin-top: -10px;
-    width: 100%;
-    list-style-type: none;
-    
-    padding: 0;
-    overflow: hidden;
-    background-color: #D9C5AE;
-
-}
-
-li{
-    
-    float: left;
-}
-li a{ 
-    display: block;
-    color: #0a0a0ac3;
+<style> /*style body 1 */
+    *{
+      
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      
+  }
+  .body1{
+      width: 100%;
+      height: 95px;
+      background-color: #b3b3b342;
+  }
+  
+  
+  
+  ul{
+      margin-top: -10px;
+      width: 100%;
+      list-style-type: none;
+      
+      padding: 0;
+      overflow: hidden;
+      
+  
+  }
+  
+  li{
+      
+      float: left;
+  }
+  li a{ 
+      height: 55px;
+      margin-top: 8px;
+      display: block;
+      color: #0a0a0ac3;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 520;
+      
+  
+  }
+  
+  li a:hover{
+     
+      background-color: #b95c316b;
+  }
+  
+  
+  .name{
+      font-size: 38px;
+      margin-left: 55px;
+      margin-top: -45px;
+      color: #B95C31;
+  }
+  
+  
+  .dash{
+      margin-left: 23.4%;
+  }
+  
+  
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .container h2 {
+    background-color: rgba(214, 214, 214, 0.226);
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 520;
+    margin: 0 auto 20px;
+    padding: 10px;
+  }
+  
+  .container-fluid {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .imgbanho {
+    max-width: 100%;
+  }
+  
+  .container-fluid p  {
+    flex: 1;
+    background-color: #b3b3b342;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  .boxtest{
+      width: 100%;
+      height: auto;
+      background-color: #ff0000;
+  }
+  .navbar{
+    
+      margin-top: -18px;
+  }
+  
+  .login{
+      margin-top: -70px;
+      margin-left: 300px;
+  }
 
-}
+  /*---------------------*/
 
-li a:hover{
-    background-color: #b95c316b;
-}
-
-.name{
-    margin-left: 55px;
-    margin-top: -45px;
-    color: #B95C31;
-}
-
-.box{
+  .box1{
     width: 100%;
-    height: 45px ;
-    margin-top: -58px;
-    background-color: rgba(235, 222, 141, 0.475);
-}
-.dash{
-    margin-left: 30%;
-}
-.conteudo{
+    background-color:   #b95c3108 ;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    width: 40%;
-    background-color:#b95c31b8; 
-    margin-left: 30%;   
-
+    padding: 10px 0;
 }
-            
-        </style>
-        <style> /*style body 2 */
-
-        </style>
+  
+  
+      
+  </style>
+        
 
     </head>
         <body >
-            
-            <img id="logotipo" src="imagens/logo.jpg" alt="logo da loja" width="40px">
+            <div class="body1">
+            <img id="logotipo" src="imagens/logo.png" alt="logo da loja" width="40px" style="margin-left: 5px;">
             <h1 class="name"> PHP DOG </h1>
             <div class="box"></div>
-            <div id="divBusca">
-                <input type="text" id="textoBusca" placeholder="Buscar..."/>
-                    <img src="imagens/busca.png" id="btnBusca" alt="Buscar" width="20px"  />
-              </div>
+            
             
             <nav class="navbar">
                 <ul>
@@ -94,26 +153,129 @@ li a:hover{
                     <li><a href="produtos.html"> Produtos</a></li>
                     <li><a href="agendar.html"> Agendar</a></li>
                     <li><a href="cadastrarpet.html"> Cadastrar meu pet</a></li>
-                    <li class="dash"><a href="contato.html"> Contato</a></li>
-                    <li class="dash1"><a href="sobrenos.html"> Sobre Nós</a></li>
+                    <li class="dash"><a href="login.html">Login</a></li>
+                    <li ><a href="contato.html"> Contato</a></li>
+                    <li ><a href="sobrenos.html"> Sobre Nós</a></li>
                     
 
                 </ul>
             
             </nav>
-            
+        </div>    
 
                    
             
         </body>
+        
         <body>
+            <div class="box1">
+            <br>
             <center><h2 >Banho</h2></center>
             <div class="container-fluid">
                 <div class="row" style="margin-top: 20px;">
                     <div class="col-sm-2">
-                        <img id="imgbanho"  src="imagens/banho.png" width="400px">
+                        <img id="imgbanho"  src="imagens/banho1.png" width="400px" height="250px">
+                        <p  style="font-size: 8px; background-color: #b95c3102; margin-left: -15px; margin-top: -10px;">Imagem meramente ilustrariva</p>
+                    </div>
+                    <div class="col-sm-8">
+                        <p style="text-align: right; margin-left: 200px; text-align: left;"> Banhos regulares 
+                            mantém os pelos e pele de seu cachorro limpa, renovada e saudável. 
+                            O processo de ensaboar e escovar remove resíduos de pelos e peles que 
+                            já estão mortas, providenciando um maior respiro da pele de seu cachorro.
+                            <br>
+                            <br>
+                            <br>
+                        <span>R$ 80,00</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr style="color: #B95C31;">
+            <center><h2 >Tosa</h2></center>
+            <div class="container-fluid">
+                <div class="row" style="margin-top: 20px;">
+                    <div class="col-sm-2">
+                        <img id="imgbanho"  src="imagens/tosa.png" width="250px">
                             
-                        <p style="font-size: 8px;">Imagem meramente ilustrariva<p>
+                        <p  style="font-size: 8px; background-color: #b95c3102; margin-left: -15px; margin-top: -10px;">Imagem meramente ilustrariva</p>
+                    </div>
+                    <div class="col-sm-8">
+                        <p style="text-align: right; margin-left: 200px; text-align: left;"> A tosquia do cão 
+                            serve apenas para deixar o animal mais bonito. Existem apenas 2 tipos de tosquias 
+                            do cão: a higiénica e a estética. A tosquia do cão contribui para a promoção da 
+                            sua saúde. A tosquia do cão impede a queda do pelo.
+                            <br>
+                            <br>
+                            <br>
+                        <span>R$ 120,00</span>
+                        
+                        </p>
+                    
+                            
+                            </div>
+                </div>
+            </div>
+            <hr style="color: #B95C31;">
+            <center><h2 >Adestramento</h2></center>
+            <div class="container-fluid">
+                <div class="row" style="margin-top: 20px;">
+                    <div class="col-sm-2">
+                        <img id="imgbanho"  src="imagens/adestramento.jpg" width="400px">
+                            
+                        <p  style="font-size: 8px; background-color: #b95c3102; margin-left: -15px; margin-top: -10px;">Imagem meramente ilustrariva</p>
+                    </div>
+                    <div class="col-sm-8">
+                        <p style="text-align: right; margin-left: 200px; text-align: left;"> O adestramento é 
+                            um processo contínuo, sistemático e organizado, que permite desenvolver 
+                            habilidades necessárias para o perfeito entendimento a um comando ou para 
+                            modificação de determinados comportamentos do animal. Adestramento consiste na 
+                            aprendizagem de habilidades e o treino é a questão da repetição mecânica de uma 
+                            ação, ou seja, o treino é uma maneira de reforçar os ensinamentos do adestramento.
+                            <br>
+                            Nossas sessões de adestramento tem a duração de 50 minutos a 1 hora.
+                            <br>
+                            <br>
+                        <span>R$ 50,00</span>
+                        <br><span style="font-size: 12px;">cada sessão</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr style="color: #B95C31;">
+            <center><h2 >SPA para pets</h2></center>
+            <div class="container-fluid">
+                <div class="row" style="margin-top: 20px;">
+                    <div class="col-sm-2">
+                        
+                            
+                     </div>
+                    <div class="col-sm-8">
+                        <p > O próprio nome (SPA – sanus per aquam – “saúde através da água”) reflete a 
+                            essência destes procedimentos – recuperação do organismo. Os cuidados SPA incluem 
+                            lavagem, máscaras, envoltórios, aromaterapia, ozonoterapia, hidromassagem, 
+                            saturação da pele e do pelo com minerais e sais. Os produtos utilizados em 
+                            SPA para animais contêm necessariamente componentes naturais – óleos, minerais, 
+                            sais, argila, lama, ozono, extratos herbais. Tais remédios penetram mais 
+                            profundamente na pele do que os champôs e condicionadores comuns, e as suas 
+                            propriedades antisstress são inigualáveis.
+                            <br>
+                            <br>
+                            Nossas sessões de SPA tem a duração de 2 horas.
+                            <br>
+                            <br>
+                        <span>R$ 80,00</span>
+                            </p>
+                    </div>
+                </div>
+            </div>
+            <hr style="color: #B95C31;">
+            <center><h2 >Banho</h2></center>
+            <div class="container-fluid">
+                <div class="row" style="margin-top: 20px;">
+                    <div class="col-sm-2">
+                        <img id="imgbanho"  src="imagens/adestramento.jpg" width="400px">
+                            
+                        <p  style="font-size: 8px; background-color: #b95c3102; margin-left: -15px; margin-top: -10px;">Imagem meramente ilustrariva</p>
                     </div>
                     <div class="col-sm-8">
                         <p style="text-align: right; margin-left: 200px; text-align: left;"> Em 21 de outubro de 1879, o cientista norte-americano
@@ -130,107 +292,10 @@ li a:hover{
                         as incandescentes.</p>
                     </div>
                 </div>
-            </div>
-
-            <center><h2 >Banho</h2></center>
-            <div class="container-fluid">
-                <div class="row" style="margin-top: 20px;">
-                    <div class="col-sm-2">
-                        <img id="imgbanho"  src="imagens/banho.png" width="400px">
-                            
-                        <p style="font-size: 8px;">Imagem meramente ilustrariva<p>
-                    </div>
-                    <div class="col-sm-8">
-                        <p style="text-align: right; margin-left: 200px; text-align: left;"> Em 21 de outubro de 1879, o cientista norte-americano
-                        Thomas Edison (1847-1931) revolucionava de vez a forma como iluminávamos nossas vidas
-                        através da invenção da lâmpada elétrica. Reza a lenda que foram mais de 1.000 tentativas!
-                        Ainda bem que ele não desistiu do experimento.
-                        A primeira lâmpada elétrica foi feita com um filamento de carvão dentro de um bulbo
-                        de vidro e se manteve acesa por 45 horas. Por isso, a data foi escolhida como
-                        Dia Mundial da Iluminação.
-                        A Incandescente de Edison passou a ser produzida em larga escala, após substituírem
-                        o carvão por tungstênio. Em 1938, era a vez do inventor sérvio Nikola Tesla dar sua
-                        contribuição à história das lâmpadas ao criar as Fluorescentes, que basicamente
-                        funcionavam através de gases e se colocava como uma alternativa mais eficiente que
-                        as incandescentes.</p>
-                    </div>
-                </div>
-            </div>
-
-            <center><h2 >Banho</h2></center>
-            <div class="container-fluid">
-                <div class="row" style="margin-top: 20px;">
-                    <div class="col-sm-2">
-                        <img id="imgbanho"  src="imagens/banho.png" width="400px">
-                            
-                        <p style="font-size: 8px;">Imagem meramente ilustrariva<p>
-                    </div>
-                    <div class="col-sm-8">
-                        <p style="text-align: right; margin-left: 200px; text-align: left;"> Em 21 de outubro de 1879, o cientista norte-americano
-                        Thomas Edison (1847-1931) revolucionava de vez a forma como iluminávamos nossas vidas
-                        através da invenção da lâmpada elétrica. Reza a lenda que foram mais de 1.000 tentativas!
-                        Ainda bem que ele não desistiu do experimento.
-                        A primeira lâmpada elétrica foi feita com um filamento de carvão dentro de um bulbo
-                        de vidro e se manteve acesa por 45 horas. Por isso, a data foi escolhida como
-                        Dia Mundial da Iluminação.
-                        A Incandescente de Edison passou a ser produzida em larga escala, após substituírem
-                        o carvão por tungstênio. Em 1938, era a vez do inventor sérvio Nikola Tesla dar sua
-                        contribuição à história das lâmpadas ao criar as Fluorescentes, que basicamente
-                        funcionavam através de gases e se colocava como uma alternativa mais eficiente que
-                        as incandescentes.</p>
-                    </div>
-                </div>
-            </div>
-
-            <center><h2 >Banho</h2></center>
-            <div class="container-fluid">
-                <div class="row" style="margin-top: 20px;">
-                    <div class="col-sm-2">
-                        <img id="imgbanho"  src="imagens/banho.png" width="400px">
-                            
-                        <p style="font-size: 8px;">Imagem meramente ilustrariva<p>
-                    </div>
-                    <div class="col-sm-8">
-                        <p style="text-align: right; margin-left: 200px; text-align: left;"> Em 21 de outubro de 1879, o cientista norte-americano
-                        Thomas Edison (1847-1931) revolucionava de vez a forma como iluminávamos nossas vidas
-                        através da invenção da lâmpada elétrica. Reza a lenda que foram mais de 1.000 tentativas!
-                        Ainda bem que ele não desistiu do experimento.
-                        A primeira lâmpada elétrica foi feita com um filamento de carvão dentro de um bulbo
-                        de vidro e se manteve acesa por 45 horas. Por isso, a data foi escolhida como
-                        Dia Mundial da Iluminação.
-                        A Incandescente de Edison passou a ser produzida em larga escala, após substituírem
-                        o carvão por tungstênio. Em 1938, era a vez do inventor sérvio Nikola Tesla dar sua
-                        contribuição à história das lâmpadas ao criar as Fluorescentes, que basicamente
-                        funcionavam através de gases e se colocava como uma alternativa mais eficiente que
-                        as incandescentes.</p>
-                    </div>
-                </div>
-            </div>
-
-            <center><h2 >Banho</h2></center>
-            <div class="container-fluid">
-                <div class="row" style="margin-top: 20px;">
-                    <div class="col-sm-2">
-                        <img id="imgbanho"  src="imagens/banho.png" width="400px">
-                            
-                        <p style="font-size: 8px;">Imagem meramente ilustrariva<p>
-                    </div>
-                    <div class="col-sm-8">
-                        <p style="text-align: right; margin-left: 200px; text-align: left;"> Em 21 de outubro de 1879, o cientista norte-americano
-                        Thomas Edison (1847-1931) revolucionava de vez a forma como iluminávamos nossas vidas
-                        através da invenção da lâmpada elétrica. Reza a lenda que foram mais de 1.000 tentativas!
-                        Ainda bem que ele não desistiu do experimento.
-                        A primeira lâmpada elétrica foi feita com um filamento de carvão dentro de um bulbo
-                        de vidro e se manteve acesa por 45 horas. Por isso, a data foi escolhida como
-                        Dia Mundial da Iluminação.
-                        A Incandescente de Edison passou a ser produzida em larga escala, após substituírem
-                        o carvão por tungstênio. Em 1938, era a vez do inventor sérvio Nikola Tesla dar sua
-                        contribuição à história das lâmpadas ao criar as Fluorescentes, que basicamente
-                        funcionavam através de gases e se colocava como uma alternativa mais eficiente que
-                        as incandescentes.</p>
-                    </div>
-                </div>
-            </div>
+            </div></div>
+            <footer>
+                <p>&copy; 2023 Pet Shop PHP. Todos os direitos reservados.</p>
+            </footer>
         </body>
         
 
