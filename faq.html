@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+
+    <title>FAQs - Pet Shop</title>
+
+</head>
+<style>
+    * {
+
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+
+    .body1 {
+        width: 100%;
+        height: 95px;
+        background-color: #b3b3b342;
+    }
+
+
+
+    ul {
+        list-style-type: none;
+       
+        height: 60px;
+        
+        margin-top: -18px;
+        position: sticky;
+        top:0;
+    }
+
+    li {
+
+        float: left;
+    }
+
+    li a {
+
+        margin-top: 10px;
+        display: block;
+        color: #0a0a0ac3;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 520;
+
+
+    }
+
+    li a:hover {
+
+        background-color: #b95c316b;
+    }
+
+
+    .name {
+        font-size: 38px;
+        margin-left: 55px;
+        margin-top: -58px;
+        color: #B95C31;
+    }
+
+
+    .dash {
+        margin-left: 30%;
+    }
+
+
+
+
+    .search-bar {
+        width: 50%;
+        margin-left: 230px;
+        margin-top: -38px;
+        margin-bottom: 15px;
+        align-items: center;
+
+
+
+    }
+
+    #search-input {
+        flex: 1;
+
+        border: none;
+        padding: 6px;
+        font-size: 16px;
+    }
+
+    #search-button {
+        background-color: #B95C31;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 6px 12px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="body1">
+        <img id="logotipo" src="imagens/logo.png" alt="logo da loja" width="40px" style="margin-left: 5px;">
+        <h1 class="name"> PHP DOG </h1>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Pesquisar...">
+            <button id="search-button">Pesquisar</button>
+        </div>
+        <div class="box"></div>
+
+
+
+        <ul>
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="servicos.html"> Serviços</a></li>
+            <li><a href="produtos.html"> Produtos</a></li>
+            <li><a href="agendar.html"> Agendar</a></li>
+            <li><a href="cadastrar.html"> Cadastrar</a></li>
+            <li class="dash"><a href="login.html">Login</a></li>
+            <li><a href="contato.html"> Contato</a></li>
+            <li><a href="sobrenos.html"> Sobre Nós</a></li>
+
+
+        </ul>
+
+
+    
+</body>
+
+<style>
+    /* Estilize o corpo da página */
+    .body1 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    /* Estilize o cabeçalho */
+    header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    /* Estilize o título principal */
+    h1 {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    /* Estilize a seção das perguntas frequentes */
+    main {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        padding: 20px;
+    }
+
+    /* Estilize cada item de FAQ */
+    .faq-item {
+        margin-bottom: 20px;
+    }
+
+    .faq-item h2 {
+        font-size: 20px;
+        margin: 0;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .faq-item p {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    /* Estilize o rodapé */
+    footer {
+        color: #fff;
+        background-color: #333;
+        text-align: center;
+        margin-top: 151px;
+        padding: 10px;
+        margin-left: -400px;
+    }
+    .faq{
+        
+        margin-right: 400px;
+        color: #fff;
+        text-decoration: none;
+    }
+    .faq:hover{
+        text-decoration:underline;
+        
+    }
+</style>
+
+<body class="body1">
+    <header>
+        <h1>Perguntas Frequentes</h1>
+    </header>
+
+    <main>
+        <section class="faq-item">
+            <h2>Como faço para agendar um banho para o meu pet?</h2>
+            <p>
+                Você pode agendar um banho para o seu pet entrando em contato conosco pelo telefone, visitando nossa
+                loja pessoalmente ou atraves do nosso site em agendar.  <a href="agendar.html">  Clique aqui</a>
+            </p>
+        </section>
+
+        <section class="faq-item">
+            <h2>Quais são os nossos horários de funcionamento?</h2>
+            <p>
+                Estamos abertos de segunda a sexta-feira, das 8h às 18h, e aos sábados, das 9h às 15h. Fechamos aos
+                domingos.
+            </p>
+        </section>
+
+        <section class="faq-item">
+            <h2>Quais métodos de pagamento aceitamos?</h2>
+            <p>
+                Aceitamos pagamento em dinheiro, cartão de crédito e cartão de débito. Não aceitamos cheques.
+            </p>
+
+        </section>
+
+        <section class="faq-item">
+            <h2>Como eliminar as pulgas?</h2>
+            <p>
+                Para tratamento do animal existem  no mercado opções em forma de pipetas, sprays, comprimido ou coleiras. Importante: o produto deve ser específico para cães e gatos e o ideal é que um veterinário indique qual a melhor opção de antipulga  para seu animal de acordo com sua idade e saúde.
+            </p>
+
+        </section>
+
+        <section class="faq-item">
+            <h2>Quais são os cuidados odontológicos para os PET?</h2>
+            <p>
+                A escovação diária com pasta e escova especialmente desenvolvidas para animais é a única forma de previnir o acúmulo da placa bacteriana. Não use pastas para humanos pois a sua ingestão pode levar a distúrbios estomacais e também a intoxicação. Esta rotina deve ser iniciada ainda quando filhote (a partir do 4° ou 5° mês). Inicialmente ele pode não aceitar, mas tenha paciência e seja insistente. Você pode oferecer recompensas (passeios, ossinhos, etc) após cada escovação como forma de condicionamento.
+            </p>
+
+        </section>
+        
+    </main>
+
+    <footer>
+        <p><a class="faq" href="faq.html">FAQ's</a> &copy; 2023 Pet Shop. Todos os direitos reservados.</p>
+    
+    </footer>
+</body>
+
+</html>

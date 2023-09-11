@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <title> PHP DOG </title>
+        <title> Serviços </title>
         <link href="style.css" rel="stylesheet" type="text/css"/>
         <link href="css/busca.css" rel="stylesheet" type="text/css"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-
@@ -69,7 +69,7 @@ crossorigin="anonymous">
   
   
   .dash{
-      margin-left: 23.4%;
+      margin-left: 30%;
   }
   
   
@@ -132,6 +132,33 @@ crossorigin="anonymous">
     text-align: center;
     padding: 10px 0;
 }
+.search-bar {
+    width: 50%;
+    margin-left:230px;
+    margin-top: -50px;
+    margin-bottom: 15px;
+    align-items: center;    
+    
+    
+    
+}
+
+#search-input {
+    flex: 1;
+
+    border: none;
+    padding: 6px;
+    font-size: 16px;
+}
+
+#search-button {
+    background-color: #B95C31;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
   
   
       
@@ -143,6 +170,10 @@ crossorigin="anonymous">
             <div class="body1">
             <img id="logotipo" src="imagens/logo.png" alt="logo da loja" width="40px" style="margin-left: 5px;">
             <h1 class="name"> PHP DOG </h1>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Pesquisar...">
+                <button id="search-button">Pesquisar</button>
+            </div>
             <div class="box"></div>
             
             
@@ -152,7 +183,7 @@ crossorigin="anonymous">
                     <li><a href="servicos.html"> Serviços</a></li>
                     <li><a href="produtos.html"> Produtos</a></li>
                     <li><a href="agendar.html"> Agendar</a></li>
-                    <li><a href="cadastrarpet.html"> Cadastrar meu pet</a></li>
+                    <li><a href="cadastrar.html"> Cadastrar</a></li>
                     <li class="dash"><a href="login.html">Login</a></li>
                     <li ><a href="contato.html"> Contato</a></li>
                     <li ><a href="sobrenos.html"> Sobre Nós</a></li>
@@ -268,31 +299,7 @@ crossorigin="anonymous">
                     </div>
                 </div>
             </div>
-            <hr style="color: #B95C31;">
-            <center><h2 >Banho</h2></center>
-            <div class="container-fluid">
-                <div class="row" style="margin-top: 20px;">
-                    <div class="col-sm-2">
-                        <img id="imgbanho"  src="imagens/adestramento.jpg" width="400px">
-                            
-                        <p  style="font-size: 8px; background-color: #b95c3102; margin-left: -15px; margin-top: -10px;">Imagem meramente ilustrariva</p>
-                    </div>
-                    <div class="col-sm-8">
-                        <p style="text-align: right; margin-left: 200px; text-align: left;"> Em 21 de outubro de 1879, o cientista norte-americano
-                        Thomas Edison (1847-1931) revolucionava de vez a forma como iluminávamos nossas vidas
-                        através da invenção da lâmpada elétrica. Reza a lenda que foram mais de 1.000 tentativas!
-                        Ainda bem que ele não desistiu do experimento.
-                        A primeira lâmpada elétrica foi feita com um filamento de carvão dentro de um bulbo
-                        de vidro e se manteve acesa por 45 horas. Por isso, a data foi escolhida como
-                        Dia Mundial da Iluminação.
-                        A Incandescente de Edison passou a ser produzida em larga escala, após substituírem
-                        o carvão por tungstênio. Em 1938, era a vez do inventor sérvio Nikola Tesla dar sua
-                        contribuição à história das lâmpadas ao criar as Fluorescentes, que basicamente
-                        funcionavam através de gases e se colocava como uma alternativa mais eficiente que
-                        as incandescentes.</p>
-                    </div>
-                </div>
-            </div></div>
+            </div>
             <footer>
                 <p>&copy; 2023 Pet Shop PHP. Todos os direitos reservados.</p>
             </footer>

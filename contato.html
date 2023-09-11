@@ -2,9 +2,9 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <title> PHP DOG </title>
+        <title> PHP DOG - Contato </title>
         <link href="style.css" rel="stylesheet" type="text/css"/>
-        <link href="css/busca.css" rel="stylesheet" type="text/css"/>
+        <link  rel="stylesheet" type="text/css"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-
 alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-
 aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
@@ -45,7 +45,7 @@ crossorigin="anonymous">
   }
   li a{ 
       height: 55px;
-      margin-top: 8px;
+      margin-top: 6px;
       display: block;
       color: #0a0a0ac3;
       text-align: center;
@@ -72,12 +72,38 @@ crossorigin="anonymous">
   
   
   .dash{
-      margin-left: 23.4%;
+      margin-left: 30%;
   }
 
   .navbar{
     
     margin-top: -18px;
+}
+.search-bar {
+    width: 30%;
+    margin-left:230px;
+    margin-top: -48px;
+    display: flex;
+    align-items: center;
+    
+   
+}
+
+#search-input {
+    flex: 1;
+    border: none;
+    padding: 6px;
+    font-size: 16px;
+}
+
+#search-button {
+    margin-top: -15px;
+    background-color: #B95C31;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
 }
  </style>
 
@@ -85,6 +111,10 @@ crossorigin="anonymous">
     <div class="body1">
     <img id="logotipo" src="imagens/logo.png" alt="logo da loja" width="40px" style="margin-left: 5px;">
     <h1 class="name"> PHP DOG </h1>
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Pesquisar...">
+        <button id="search-button">Pesquisar</button>
+    </div>
     <div class="box"></div>
     
     
@@ -94,7 +124,7 @@ crossorigin="anonymous">
             <li><a href="servicos.html"> Serviços</a></li>
             <li><a href="produtos.html"> Produtos</a></li>
             <li><a href="agendar.html"> Agendar</a></li>
-            <li><a href="cadastrarpet.html"> Cadastrar meu pet</a></li>
+            <li><a href="cadastrar.html"> Cadastrar</a></li>
             <li class="dash"><a href="login.html">Login</a></li>
             <li ><a href="contato.html"> Contato</a></li>
             <li ><a href="sobrenos.html"> Sobre Nós</a></li>
@@ -115,12 +145,117 @@ crossorigin="anonymous">
     color: #fff;
     text-align: center;
     padding: 10px 0;
+
+    
 }
+
+header {
+    
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilo para o título principal */
+h1 {
+    font-size: 24px;
+}
+
+/* Estilo para a seção do formulário de contato */
+section {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para os rótulos dos campos do formulário */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Estilo para os campos de entrada de texto e área de texto */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Estilo para o botão de envio */
+.button1[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Estilo para o rodapé */
+
+
+/* Estilo para o link de e-mail */
+.a1 {
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+}
+.a1:hover{
+    
+    text-decoration: underline;
+}
+
+
 </style>
 
 <body class="body1">
 
+    <header>
+        <h1>Entre em Contato</h1>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Formulário de Contato</h2>
+            <form  method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
 
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                <p class="faq"><a class="a1" href="faq.html">FAQ's - </a> aqui temos algumas duvidas mais comuns.</p>
+                <button calss="button1" type="submit">Enviar</button>
+                
+            </form>
+        </section>
+
+        <section>
+            <h2>Informações de Contato</h2>
+            <address>
+                <p>E-mail: <a class="a1" href="contato.php@petshopPHP.com">contato.php@petshopPHP.com</a></p>
+                <p>Telefone: (99) 9999-9999</p>
+                <p>Endereço: Rua jardim alegre</p>
+                <p>Cidade: Curitiba - PR</p>
+                <p>CEP: 81935-030</p>
+            </address>
+
+            <!-- Você pode incorporar um mapa do Google Maps aqui -->
+        </section>
+    </main>
 
 
 

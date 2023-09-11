@@ -2,9 +2,8 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <title> PHP DOG </title>
-        <link href="style.css" rel="stylesheet" type="text/css"/>
-        <link href="css/busca.css" rel="stylesheet" type="text/css"/>
+        <title> Agendar </title>
+        
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-
 alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-
 aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
@@ -72,12 +71,40 @@ crossorigin="anonymous">
   
   
   .dash{
-      margin-left: 23.4%;
+      margin-left: 30%;
   }
 
   .navbar{
     
     margin-top: -18px;
+}
+
+.search-bar {
+    width: 50%;
+    margin-left:230px;
+    margin-top: -50px;
+    margin-bottom: 15px;
+    align-items: center;    
+    
+    
+    
+}
+
+#search-input {
+    flex: 1;
+
+    border: none;
+    padding: 6px;
+    font-size: 16px;
+}
+
+#search-button {
+    background-color: #B95C31;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
 }
  </style>
 
@@ -85,6 +112,10 @@ crossorigin="anonymous">
     <div class="body1">
     <img id="logotipo" src="imagens/logo.png" alt="logo da loja" width="40px" style="margin-left: 5px;">
     <h1 class="name"> PHP DOG </h1>
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Pesquisar...">
+        <button id="search-button">Pesquisar</button>
+    </div>
     <div class="box"></div>
     
     
@@ -94,7 +125,7 @@ crossorigin="anonymous">
             <li><a href="servicos.html"> Serviços</a></li>
             <li><a href="produtos.html"> Produtos</a></li>
             <li><a href="agendar.html"> Agendar</a></li>
-            <li><a href="cadastrarpet.html"> Cadastrar meu pet</a></li>
+            <li><a href="cadastrar.html"> Cadastrar</a></li>
             <li class="dash"><a href="login.html">Login</a></li>
             <li ><a href="contato.html"> Contato</a></li>
             <li ><a href="sobrenos.html"> Sobre Nós</a></li>
@@ -110,29 +141,121 @@ crossorigin="anonymous">
 </body>
 <style>
     footer {
+    margin-top: 10px;
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
 }
+header{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+
+}
+
+/* Estilize a seção do formulário */
+section {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    
+}
+
+/* Estilize os rótulos e campos de entrada */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.h41{
+    text-align: center;
+}
 </style>
 
 <body class="body1">
 
+    <header>
+        <h3>Agende um Procedimento</h3>
+    </header>
 
+    <section>
+        <h4>Preencha o Formulário</h4>
+        <form id="agendamento-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
 
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="Procedimento">Qual Procedimento:</label>
+            <select id="procedimento" name="procedimento">
+                
+                <option value="banho">Banho</option>
+                <option value="tosa">Tosa</option>
+                <option value="spa">SPA para pets</option>
+                
+                
+            </select>
 
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
 
+            <label for="data">Data do Procedimento:</label>
+            <input type="date" id="data" name="data" required>
 
-
+            <label for="horario">Horário:</label>
+            <input type="time" id="horario" name="horario" required>
+            <br><br>
+            <button type="submit">Agendar</button>
+            
+        </form>
+    </section>
 
     
+        <h4 class="h41">Entre em contato conosco se precisar reagendar ou tiver alguma dúvida.</h4>
+    
+        <div id="agendamentos-container"></div>
 
     <footer>
         <p>&copy; 2023 Pet Shop PHP. Todos os direitos reservados.</p>
     </footer>
+    <script>
+   
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('agendamento-form');
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault(); // Impede o envio padrão do formulário
+
+                const nome = form.querySelector('#nome').value;
+                const email = form.querySelector('#email').value;
+                const telefone = form.querySelector('#telefone').value;
+                const data = form.querySelector('#data').value;
+                const horario = form.querySelector('#horario').value;
+                const Procedimento = form.querySelector('#procedimento').value;
+
+                // Exibe os dados no console do navegador
+                console.log('Nome:', nome);
+                console.log('Email:', email);
+                console.log('Telefone:', telefone);
+                console.log('Data do Procedimento:', data);
+                console.log('Horário:', horario);
+                console.log('Procedimento:', Procedimento);
+
+                alert('Agendado com sucesso');
+                form.reset();
+            });
+        });
+
+        
+    </script>
 </body>
-  
+
   
   
   

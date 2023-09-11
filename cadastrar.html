@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title> Cadastrar </title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <link href="css/busca.css" rel="stylesheet" type="text/css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-
+alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-
+aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+crossorigin="anonymous">
+    </head>
+
+
+<style> /*style body 1 */
+    *{
+      
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      
+  }
+  .body1{
+      width: 100%;
+      height: 95px;
+      background-color: #b3b3b342;
+  }
+  
+  
+  
+  ul{
+      margin-top: -10px;
+      width: 100%;
+      list-style-type: none;
+      
+      padding: 0;
+      overflow: hidden;
+      
+  
+  }
+  
+  li{
+      
+      float: left;
+  }
+  li a{ 
+      height: 55px;
+      margin-top: 8px;
+      display: block;
+      color: #0a0a0ac3;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 520;
+      
+  
+  }
+  
+  li a:hover{
+     
+      background-color: #b95c316b;
+  }
+  
+  
+  .name{
+      font-size: 38px;
+      margin-left: 55px;
+      margin-top: -45px;
+      color: #B95C31;
+  }
+  
+  
+  .dash{
+      margin-left: 30%;
+  }
+
+  .navbar{
+    
+    margin-top: -18px;
+}
+
+
+.search-bar {
+    width: 50%;
+    margin-left:230px;
+    margin-top: -50px;
+    margin-bottom: 15px;
+    align-items: center;    
+    
+    
+    
+}
+
+#search-input {
+    flex: 1;
+
+    border: none;
+    padding: 6px;
+    font-size: 16px;
+}
+
+#search-button {
+    background-color: #B95C31;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+ </style>
+
+<body >
+    <div class="body1">
+    <img id="logotipo" src="imagens/logo.png" alt="logo da loja" width="40px" style="margin-left: 5px;">
+    <h1 class="name"> PHP DOG </h1>
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Pesquisar...">
+        <button id="search-button">Pesquisar</button>
+    </div>
+    <div class="box"></div>
+    
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="servicos.html"> Serviços</a></li>
+            <li><a href="produtos.html"> Produtos</a></li>
+            <li><a href="agendar.html"> Agendar</a></li>
+            <li><a href="cadastrar.html"> Cadastrar</a></li>
+            <li class="dash"><a href="login.html">Login</a></li>
+            <li ><a href="contato.html"> Contato</a></li>
+            <li ><a href="sobrenos.html"> Sobre Nós</a></li>
+            
+
+        </ul>
+    
+    </nav>
+</div>    
+      
+    
+</body>
+
+<style>
+    footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+</style>
+<style>
+    form {
+font-weight: bold
+;
+font-family: Arial, Helvetica, sans-serif
+;
+font-size: 14px;
+}
+div.form1 {
+background-color: #e8e4e4c5
+;
+}.class_input_name {
+width: 300px;
+}.class_botao_enviar {
+width: 100px;
+height: 30px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+font-weight: bold;
+}
+
+
+</style>
+<body class="body1">
+    <div class="form1">
+        <form id="cadastro-form" action="https://formsubmit.co/email@email.com" method="POST">
+        <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label>Nome:</label>
+        <input type="text" name="Nome" placeholder="Nome completo" class="class_input_name" required>
+        <br><br>
+        <label>CPF:</label>
+        <input type="text" name="CPF" placeholder="Digite o CPF" pattern="[0-9]{11}" required>
+        <label>Data de Nascimento:</label>
+        <input type="text" name="Nascimento" placeholder="DDMMAAAA" pattern="[0-9]{8}" required>
+        <label>Masculino</label>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label>Feminino</label>
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <br><br>
+        <label>Estado Civil:</label>
+        <select name="EstadoCivil">
+        <option value="solteiro">Solteiro(a)</option>
+        <option value="casado">Casado(a)</option>
+        <option value="divorciado">Divorciado(a)</option>
+        <option value="viuvo">Viuvo(a)</option>
+        <option value="união estável">União Estável</option>
+        <option value="outro">Outros</option>
+        </select>
+        
+        <label>Renda Mensal (opcional):</label>
+        <input type="text" name="rendamensal" placeholder="Digite a renda">
+        </fieldset>
+        <div class="senha">
+            <br>
+                <label for="password">Digite sua senha: </label>
+                <input type="password" id="password" name="password" placeholder="Digite a senha" required>
+                <label for="password">   Digite novamente sua senha: </label>
+                <input type="password" id="confirmPassword" name="password" placeholder="confirmar sua senha" required>
+            </div>
+        <br><hr>
+        <fieldset>
+        <legend>Endereço</legend>
+        <label>Logradouro:</label>
+        <input type="text" name="logradouro" placeholder="Nome da rua" class="class_input" required>
+        <label>Número:</label>
+        <input type="text" name="numero" placeholder="Número" required>
+        <label>Complemento:</label>
+        <input type="text" name="complemento" placeholder="Apto, Bloco, Prédio">
+        <br>
+        <br>
+        <label>Estado:</label>
+        <select name="estado">
+        <option value="AC">Acre</option>
+        <option value="AL">Alagoas</option>
+        <option value="AP">Amapá</option>
+        <option value="AM">Amazonas</option>
+        <option value="BA">Bahia</option>
+        <option value="DF">Distrito Federal</option>
+        <option value="GO">Goias</option>
+        <option value="MA">Maranhão</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="PA">Pará</option>
+        <option value="PB">Paraíba</option>
+        
+        <option value="PR">Paraná</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PI">Piauí</option>
+        <option value="RR">Roraima</option>
+        <option value="RO">Rondônia</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="SP">São Paulo</option>
+        <option value="SE">Sergie</option>
+        <option value="TO">Tocantins</option>
+        </select>
+        <label>Cidade:</label>
+        <input type="text" name="cidade" placeholder="Informe a cidade" required>
+        </fieldset><br><hr>
+        <fieldset>
+        <legend>Dados do Pet</legend>
+        <label>Nome do pet:</label>
+        <input type="text" name="nomepet" placeholder="Nome do pet" required>
+        <label>Raça:</label>
+        <input type="text" name="raça" placeholder="Informe a raça" required>
+        <label>Data de nascimento:</label>
+        <input type="text" name="nascimento_pet" placeholder="DDMMAAAA" pattern="[0-9]{8}" required>
+        <label>Sexo:</label>
+        <select name="sexopet">
+        <option value="pet_macho">Macho</option>
+        <option value="pet_femea">Fêmea</option>
+        </select>
+        </fieldset>
+        
+        <br><br>
+        <center>
+        <label>Envio dos dados cadastrais</label>
+        <input class="class_botao_enviar" type="submit">
+        </center>
+        <br><br>
+        </form>
+        </div> 
+    <footer>
+        <p>&copy; 2023 Pet Shop PHP. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const cadastroForm = document.getElementById('cadastro-form');
+    
+            cadastroForm.addEventListener('submit', function (event) {
+                event.preventDefault(); // Impede o envio padrão do formulário
+    
+                // Coleta os dados do formulário
+                const nome = cadastroForm.querySelector('[name="Nome"]').value;
+                const cpf = cadastroForm.querySelector('[name="CPF"]').value;
+                const nascimento = cadastroForm.querySelector('[name="Nascimento"]').value;
+                const genero = cadastroForm.querySelector('[name="genero"]:checked').value;
+                const estadoCivil = cadastroForm.querySelector('[name="EstadoCivil"]').value;
+                const rendaMensal = cadastroForm.querySelector('[name="rendamensal"]').value;
+                const logradouro = cadastroForm.querySelector('[name="logradouro"]').value;
+                const numero = cadastroForm.querySelector('[name="numero"]').value;
+                const complemento = cadastroForm.querySelector('[name="complemento"]').value;
+                const estado = cadastroForm.querySelector('[name="estado"]').value;
+                const cidade = cadastroForm.querySelector('[name="cidade"]').value;
+                const nomePet = cadastroForm.querySelector('[name="nomepet"]').value;
+                const racaPet = cadastroForm.querySelector('[name="raça"]').value;
+                const nascimentoPet = cadastroForm.querySelector('[name="nascimento_pet"]').value;
+                const sexoPet = cadastroForm.querySelector('[name="sexopet"]').value;
+    
+                // Validação básica (exemplo): Verifica se o campo de CPF tem 11 dígitos
+                if (cpf.length !== 11) {
+                    alert('CPF inválido. Certifique-se de que contém 11 dígitos.');
+                    return; // Impede o envio se o CPF for inválido
+                }
+    
+                // Aqui você pode adicionar a lógica para enviar os dados para o servidor ou fazer outras operações com eles.
+                // Por exemplo, usar a função fetch() para enviar os dados para o servidor.
+    
+                // Simulação de envio bem-sucedido (remova isso na implementação real)
+                alert('Cadastro efetuado com sucesso!');
+    
+                // Redireciona para outra página após o cadastro (opcional)
+                window.location.href = 'index.html';
+            });
+        });
+    </script>
+    
+</body>
+  
+  
+  
+  
+  
+</html>
